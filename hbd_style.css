@@ -21,8 +21,3 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-#button {
-    position: absolute;
-    margin-right: 150px;
-}
