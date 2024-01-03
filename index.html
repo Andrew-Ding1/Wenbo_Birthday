@@ -16,11 +16,11 @@
       </div>
       <div class="buttons">
         <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button class="btn" id="guessButton" onClick="moveButton('guessButton')">Guess</button>
         <button
           class="btn"
           id="noButton"
-          onmouseover="moveButton()"
-          onclick="moveButton()"
+          onclick="moveButton('noButton')"
         >
           No
         </button>
@@ -29,19 +29,23 @@
             window.location.href = "yes.html";
           }
 
-          function moveButton() {
-            var x =
+          function moveButton(id) {
+            let x =
               Math.random() *
                 (window.innerWidth -
                   document.getElementById("noButton").offsetWidth) -
               85;
-            var y =
+            let y =
               Math.random() *
                 (window.innerHeight -
                   document.getElementById("noButton").offsetHeight) -
               48;
-            document.getElementById("noButton").style.left = `${x}px`;
-            document.getElementById("noButton").style.top = `${y}px`;
+            document.getElementById(id).style.position = "absolute";
+            document.getElementById(id).style.left = `${x}px`;
+            document.getElementById(id).style.top = `${y}px`;
+            document.getElementById(id).addEventListener("mouseover", () => {
+              moveButton(id);
+            });
           }
         </script>
       </div>

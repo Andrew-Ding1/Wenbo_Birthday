@@ -6,16 +6,11 @@ body {
     background-color: #F8C8DC;
 }
 
-#noButton {
-    position: absolute;
-    margin-left: 150px;
+
+#noButton, #guessButton{
     transition: 0.5s;
 }
 
-#yesButton {
-    position: absolute;
-    margin-right: 150px;
-}
 
 .header_text {
     font-family: 'Nunito';
@@ -32,6 +27,8 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+    transition: 2s;
     margin-top: 20px;
     margin-left: 20px;
 }
