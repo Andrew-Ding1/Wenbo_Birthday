@@ -6,6 +6,36 @@ body {
     background-color: #F8C8DC;
 }
 
+#yesButton {
+    position: absolute;
+    margin-right: 150px;
+    
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.buttonLooks {
+    background-color: #FFB6C1;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+
 .header_text {
     font-family: 'Nunito';
     font-size: 50px;
@@ -22,16 +52,3 @@ body {
     align-items: center;
 }
 
-#button {
-    position: absolute;
-    margin-right: 150px;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-left: 20px;
-}
